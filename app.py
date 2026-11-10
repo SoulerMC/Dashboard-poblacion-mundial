@@ -17,7 +17,7 @@ if archivo is not None:
 
     st.dataframe(top10[[pais_col, "2015 population", "2020 population", "2022 population"]])
 
-    paises = top10[Country].to_numpy()
+    paises = top10["Country"].to_numpy()
 
     poblacion_2015 = top10["2015 population"].to_numpy()
     poblacion_2020 = top10["2020 population"].to_numpy()
